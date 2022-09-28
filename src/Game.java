@@ -28,7 +28,7 @@ public class Game {
     public void takeTurn(Player player) {
         player.toss(this.die);
     }
-    public int announceWinner() {
+    public String announceWinner() {
         int p1Score = p1.getScore();
         int p2Score = p2.getScore();
 
@@ -40,7 +40,7 @@ public class Game {
         } else if (p1Score < p2Score) {
             System.out.println("The Winner is " + p2.getName() + "!");
         }
-        return 69; //lol
+        return null;
     }
     public Game(Player one, Player two, Dice diceSides) {
         p1 = one;
